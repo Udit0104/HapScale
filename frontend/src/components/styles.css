@@ -1,0 +1,8 @@
+@keyframes light-pop {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); } /* Subtle scaling effect */
+}
+
+.animate-light-pop {
+    animation: light-pop 2s infinite ease-in-out;
+}
