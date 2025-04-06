@@ -1,10 +1,9 @@
 import React from 'react'
 import Header from '../components/Header'
-import SpecialityMenu from '../components/SpecialityMenu'
-import TopDoctors from '../components/TopDoctors'
+import SpecialityMenu from '../components/WhyHapScale'
+import Events from '../components/UpcomingEvents'
 import Banner from '../components/Banner'
 import Testimonial15 from '../components/Testemonial'
-import PopupWidget from './PopupWidget'
 
 const Home = () => {
   return (
@@ -12,9 +11,8 @@ const Home = () => {
       <Header />
       <SpecialityMenu />
       <Banner />
-      <TopDoctors />
-      <PopupWidget/>
-       <Testimonial15 />
+      <Events />
+      <Testimonial15 />
        
     </div>
   )

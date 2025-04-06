@@ -1,5 +1,5 @@
 import React from "react";
-import PopupWidget from "./PopupWidget";
+import ContactForm from "./PersonalDetailsForm";
 import { assets } from "../assets/assets";
 const Shapes = () => (
 	<>
@@ -8,24 +8,6 @@ const Shapes = () => (
 			alt=""
 			className="absolute top-0 left-0 max-w-full h-auto hidden md:block"
 		/>
-		{/* <img
-			src="https://cdn.easyfrontend.com/pictures/hero/header34-svg2.png"
-			alt=""
-			className="absolute bottom-0 left-0 max-w-full h-auto hidden md:block"
-		/> */}
-
-		{/* <div className="absolute top-0 right-[8%] h-full w-64 bg-slate-100 dark:bg-slate-800 rounded-3xl hidden md:block -z-10">
-			<img
-				src="https://cdn.easyfrontend.com/pictures/hero/header34-svg3.png"
-				alt=""
-				className="absolute top-[10%] left-0 text-blue-600 max-w-full h-auto hidden md:block"
-			/>
-			<img
-				src="https://cdn.easyfrontend.com/pictures/hero/header34-svg4.png"
-				alt=""
-				className="absolute bottom-0 right-0 max-w-full h-auto hidden md:block"
-			/>
-		</div> */}
 	</>
 );
 
@@ -41,16 +23,12 @@ const HeroHeader40 = () => {
 							Learn more about our HapScale Product
 						</h2>
 						<p className="text-xl leading-relaxed opacity-80 mb-12">
-							We have  AI driven algorithms that help to measure the happiness level of an employee in an enterprise.
-							You can take your HapScale Product  demo now by contacting us via contact section or the popoup widget given at the bottom right side of the page
-						</p>
+						We use AI-driven algorithms to measure employee happiness by analyzing their responses to life-related questions. Our intuitive dashboard provides Leaders of the organisations with real-time insights, enabling them to enhance employee well-being and overall productivity.
 
-						{/* <a
-							href="#!"
-							className="py-3 px-8 text-white bg-blue-600 hover:bg-opacity-90 rounded"
-						>
-							Learn More
-						</a> */}
+							<br />
+							
+							Try the HapScale Product demo today—contact us using the button below!
+						</p>
 					</div>
 					<div className="col-span-12 lg:col-span-6">
 						<img
@@ -60,9 +38,16 @@ const HeroHeader40 = () => {
 						/>
 					</div>
 				</div>
-                <PopupWidget />
+				
+				{/* Contact Us Button */}
+				<div className="text-center mt-12">
+					<a href="/contact-form" className="inline-block py-3 px-6 text-white bg-blue-600 hover:bg-opacity-90 rounded">
+						Contact Us
+					</a>
+				</div>
 			</div>
 		</header>
 	);
 };
+
 export default HeroHeader40;

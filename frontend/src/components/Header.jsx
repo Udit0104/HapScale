@@ -36,29 +36,29 @@ const Header = () => {
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                BE HAPPY <br />
-                <span className="bg-gradient-to-r from-blue-200 to-emerald-200 bg-clip-text text-transparent">
-                  LIVE HAPPY
-                </span>
-              </h1>
-              <p className="text-lg text-blue-100 leading-relaxed max-w-xl">
-                "Happiness is not something ready-made, it comes from our own
-                actions!"
-              </p>
-            </div>
+  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+    BE HAPPY <br />
+    <span className="bg-gradient-to-r from-blue-200 to-emerald-200 bg-clip-text text-transparent">
+      LIVE HAPPY
+    </span>
+  </h1>
+  <p className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight">
+    Scale and Enhance Enterprise Happiness with HapScale !
+  </p>
+</div>
+
 
             {/* Buttons Container */}
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <button
                 onClick={handleGetStartedClick}
-                className="bg-white text-sm sm:text-base text-[#595959] px-8 py-3 rounded-full hover:scale-105 transition-all"
+                className="relative overflow-hidden rounded-full bg-white px-8 py-3 text-sm sm:text-base font-bold text-blue-900 transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center gap-2"
               >
                 Get Started
               </button>
 
               <a
-                href="#speciality"
+                href="#why-hapscale"
                 className="relative overflow-hidden rounded-full bg-white px-8 py-3 text-sm sm:text-base font-bold text-blue-900 transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center gap-2"
                 
               >

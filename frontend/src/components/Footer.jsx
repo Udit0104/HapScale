@@ -23,14 +23,16 @@ const Footer = () => {
             <li><NavLink to={`/terms-and-conditions`} onClick={() => scrollTo(0, 0)} >
                         Terms And Conditions
             </NavLink></li>
-            <li>Careers</li>
+            <li><NavLink to={`/careers`} onClick={() => scrollTo(0, 0)} >
+                        Careers
+            </NavLink></li>
           </ul>
         </div>
 
         <div>
           <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
           <ul className='flex flex-col gap-2 text-gray-600'>
-            <li>+91 9250799201</li>
+            <li><a href="tel:+919250799201" className="text-blue-600 hover:underline">+91 92 5079 9201</a></li>
             <li> info@hapscale.com
             </li>
           </ul>

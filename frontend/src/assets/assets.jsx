@@ -5,7 +5,7 @@ import group_profiles from './group_profiles.png'
 import profile_pic from './profile_pic.png'
 import contact_image from './contact_image.jpg'
 import about_image from './about_image.jpg'
-import logo from './logo.png'
+import logo from './logo.jpg'
 import dropdown_icon from './dropdown_icon.svg'
 import menu_icon from './menu_icon.svg'
 import cross_icon from './cross_icon.png'
@@ -18,27 +18,11 @@ import stripe_logo from './stripe_logo.png'
 import razorpay_logo from './razorpay_logo.png'
 import services from './services[1].png'
 import badal from './Badal.webp'
-import doc1 from './doc1.png'
-import doc2 from './doc2.png'
-import doc3 from './doc3.png'
-import doc4 from './doc4.png'
-import doc5 from './doc5.png'
-import doc6 from './doc6.png'
-import doc7 from './doc7.png'
-import doc8 from './doc8.png'
-import doc9 from './doc9.png'
-import doc10 from './doc10.png'
-import doc11 from './doc11.png'
-import doc12 from './doc12.png'
-import doc13 from './doc13.png'
-import doc14 from './doc14.png'
-import doc15 from './doc15.png'
+
 import books from './books.png'
-// import Gastroenterologist from './Gastroenterologist.svg'
 import session from './Sessions.png'
 import seminar from './Seminar.png'
-import Neurologist from './Neurologist.png'
-import Pediatricians from './Pediatricians.svg'
+import finland from './finland.jpg'
 import Hapscale from './hapscaleProduct.png'
 import aditya from './aditya.jpg'
 import ashwin from './ashwin.jpg'
@@ -59,7 +43,7 @@ import kavi from './kavi.jpg'
 import arun from './arun.jpg'
 import deep from './deep.jpg'
 import gur from './gursingh.jpg'
-
+import h2w from './H2W.jpg'
 
 export const assets = {
     appointment_img,
@@ -100,6 +84,8 @@ export const assets = {
     kavi,
     gur,
     deep,
+    h2w,
+    finland,
 }
 
 export const specialityData = [

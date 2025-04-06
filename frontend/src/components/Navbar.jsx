@@ -33,7 +33,7 @@ const Navbar = () => {
             <li className="py-1" onClick={() => scrollTo(0, 0)}>WHAT WE DO</li>
           </NavLink>
           <NavLink to="/about">
-            <li className="py-1" onClick={() => scrollTo(0, 0)}>WHAT WE ARE</li>
+            <li className="py-1" onClick={() => scrollTo(0, 0)}>ABOUT US</li>
           </NavLink>
           <NavLink to="/contact">
             <li className="py-1" onClick={() => scrollTo(0, 0)}>CONTACT US</li>
@@ -57,7 +57,7 @@ const Navbar = () => {
                     My Profile
                   </p>
                   <p
-                    onClick={() => navigate("/my-appointments")}
+                    onClick={() => navigate("/my-bookings")}
                     className="hover:text-black cursor-pointer"
                   >
                     My Bookings
@@ -102,16 +102,19 @@ const Navbar = () => {
               <NavLink onClick={() => setShowMenu(false)} to="/">
                 <p className="px-4 py-2 rounded-full inline-block">HOME</p>
               </NavLink>
-              <NavLink onClick={() => setShowMenu(false)} to="/doctors">
+              <NavLink onClick={() => setShowMenu(false)} to="/what-we-do">
                 <p className="px-4 py-2 rounded-full inline-block">
-                  ALL SESSIONS
+                  What We Do
                 </p>
               </NavLink>
               <NavLink onClick={() => setShowMenu(false)} to="/about">
-                <p className="px-4 py-2 rounded-full inline-block">ABOUT</p>
+                <p className="px-4 py-2 rounded-full inline-block">ABOUT US</p>
               </NavLink>
               <NavLink onClick={() => setShowMenu(false)} to="/contact">
-                <p className="px-4 py-2 rounded-full inline-block">CONTACT</p>
+                <p className="px-4 py-2 rounded-full inline-block">CONTACT US</p>
+              </NavLink>
+              <NavLink onClick={() => setShowMenu(false)} to="/galary">
+                <p className="px-4 py-2 rounded-full inline-block"> Gallery</p>
               </NavLink>
             </ul>
           </div>

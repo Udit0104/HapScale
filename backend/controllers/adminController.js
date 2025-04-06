@@ -48,7 +48,7 @@ const appointmentCancel = async (req, res) => {
         const { appointmentId } = req.body
         await appointmentModel.findByIdAndUpdate(appointmentId, { cancelled: true })
 
-        res.json({ success: true, message: 'Appointment Cancelled' })
+        res.json({ success: true, message: 'Booking Cancelled' })
 
     } catch (error) {
         console.log(error)

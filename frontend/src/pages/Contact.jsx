@@ -1,7 +1,6 @@
 import React from 'react';
 import { assets } from '../assets/assets';
 import { Mail, Phone, MapPin, Clock, Building2, ArrowRight, Globe } from 'lucide-react';
-import PopupWidget from './PopupWidget';
 
 const ContactInfoCard = ({ icon: Icon, title, children }) => (
   <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -58,27 +57,20 @@ const Contact = () => {
             </p>
           </ContactInfoCard>
 
-          {/* <ContactInfoCard icon={Clock} title="OPD Timings">
-            <p className="text-gray-600">
-              Monday - Saturday: 9:00 AM - 7:00 PM<br />
-              Sunday: 9:00 AM - 1:00 PM<br />
-              <span className="text-blue-600 font-medium">Emergency Services: 24/7</span>
-            </p>
-          </ContactInfoCard> */}
-
           <ContactInfoCard icon={Phone} title="Contact Numbers">
             <p className="text-gray-600">
-              Reception: +91 92 5079 9201<br />
+              Reception: <a href="tel:+919250799201" className="text-blue-600 hover:underline">+91 92 5079 9201</a><br />
               
             </p>
           </ContactInfoCard>
 
           <ContactInfoCard icon={Mail} title="Email & Web">
             <p className="text-gray-600">
-              Emails: badal.sharma@hapscale.com<br />
-              General Enquiries: admin@hapscale.com
+              Emails:  <a href="mailto:badal.sharma@hapscale.com" className="text-blue-600 hover:underline">badal.sharma@hapscale.com</a><br />
+              General Enquiries: <a href="mailto:admin@hapscale.com" className="text-blue-600 hover:underline">admin@hapscale.com</a>
               <br />
-              Website: https://hapscale.com/
+              Website: <a href="https://hapscale.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://hapscale.com/</a>
+
             </p>
           </ContactInfoCard>
         </div>
@@ -136,7 +128,7 @@ const Contact = () => {
             Be part of our prestigious happiness facility here at HAPSCALE.
             We're looking for dedicated people to join our team.
           </p>
-          <button className="group bg-blue-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 mx-auto">
+          <button className="group bg-blue-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 mx-auto" onClick={() => window.open('https://hapscale.com/careers')}>
             View Current Openings
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
@@ -166,9 +158,10 @@ const Contact = () => {
             <Phone className="w-6 h-6 text-blue-600" />
           </div>
           <h3 className="font-semibold mb-2">Toll Free</h3>
-          <p className="text-gray-600">+91 9250799201</p>
+          <a href="tel:+919250799201" className="text-blue-600 hover:underline">+91 92 5079 9201</a><br />
+  
+
         </div>
-        <PopupWidget />
       </div>
     </div>
   );

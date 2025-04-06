@@ -133,10 +133,9 @@ const AddEvent = () => {
                         <div className='flex-1 flex flex-col gap-1'>
                             <p>Event Type</p>
                             <select onChange={e => setSpeciality(e.target.value)} value={speciality} className='border rounded px-2 py-2'>
-                                <option value="Sessions">Sessions</option>
-                                <option value="Seminar">Seminar</option>
-                                <option value="books">Conference</option>
-                                <option value="workshops">Workshops</option>
+                                <option value="Sessions">Seminars</option>
+                                <option value="Books">Books</option>
+                                <option value="Workshops">Workshops</option>
                                 {/* <option value="Neurologist">Neurologist</option>
                                 <option value="Gastroenterologist">Gastroenterologist</option> */}
                             </select>

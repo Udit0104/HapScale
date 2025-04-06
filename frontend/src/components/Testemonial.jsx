@@ -7,7 +7,7 @@ const testimonialList = [
       name: "Deepankar Bishvas",
       position: "CEO & Founder at ClearTrust",
       content:
-        "Thanks Rajesh Srivastava for your one liners, Tom dick and harry and the other amazing anecdotes you shared with us. It made the event a memorable one to remember",
+        "Thanks Rajesh Srivastava for your one liners, Tom dick and harry and the other amazing anecdotes you shared with us. It made the event a memorable one to remember",
     },
     {
       img: assets.gur,
@@ -21,32 +21,9 @@ const testimonialList = [
       name: "Aditya Singh",
       position: "Senior Executive IIITians Network",
       content:
-        "Had a cahance to attend an amazing session at IIIT Ranchi, learnt to listen, not to immitate, thanks to Rajesh Sir!",
+        "Had a chance to attend an amazing session at IIIT Ranchi, learnt to listen, not to imitate, thanks to Rajesh Sir!",
     },
   ],
-  // [
-  //   {
-  //     img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_3.jpeg",
-  //     name: "Aksay Kumar",
-  //     position: "CEO & Founder at EasyFrontend",
-  //     content:
-  //       "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you. It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you.",
-  //   },
-  //   {
-  //     img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg",
-  //     name: "Sara Tailor",
-  //     position: "CEO & Founder at EasyFrontend",
-  //     content:
-  //       "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you.",
-  //   },
-  //   {
-  //     img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
-  //     name: "John Leo",
-  //     position: "CEO & Founder at EasyFrontend",
-  //     content:
-  //       "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you. It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you.",
-  //   },
-  // ],
 ];
 
 function ShapeOne() {
@@ -97,7 +74,7 @@ const Testimonial23 = () => {
   const handleSelect = (selectedIndex) => setIndex(selectedIndex);
 
   return (
-    <section className="ezy__testimonial23 light py-14 md:py-24 bg-white dark:bg-[#5f6fff] text-zinc-900 dark:text-black relative z-[1] rounded-lg px-6 sm:px-10 md:px-14 lg:px-12 my-20 md:mx-10">
+    <section className="ezy__testimonial23 py-14 md:py-24 bg-[#5f6fff] text-black relative z-[1] rounded-lg px-6 sm:px-10 md:px-14 lg:px-12 my-20 md:mx-10">
       <ShapeOne />
       <ShapeTwo />
 
@@ -105,21 +82,21 @@ const Testimonial23 = () => {
         <div className="grid grid-cols-12 gap-6 items-center justify-between mb-6 md:mb-12">
           <div className="col-span-12 md:col-span-6 lg:col-span-4">
             <h2 className="text-[32px] font-bold leading-normal text-white">
-              Everyone should believe in What Our Client Say
+               What Our Clients Say 
             </h2>
           </div>
-          <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+          {/* <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
             <p className="text-lg leading-[1.7] opacity-80 text-white bold">
               Take a look on what our users have to say about our HapScale Product and Services
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-12">
           <div className="grid grid-cols-3 gap-6">
             {testimonialList[index].map((testimonial, i) => (
               <div className="col-span-3 lg:col-span-1" key={i}>
-                <div className="bg-black dark:bg-[#e5f6f6] shadow-2xl h-full p-6 xl:p-10 rounded-lg">
+                <div className="bg-[#e5f6f6] shadow-2xl h-full p-6 xl:p-10 rounded-lg">
                   <div className="flex items-center mb-6">
                     <div className="mr-3">
                       <img
@@ -148,7 +125,7 @@ const Testimonial23 = () => {
                 className={`w-2 h-2 rounded-full ${
                   index === i
                     ? "scale-125 bg-blue-600"
-                    : " bg-gray-400 dark:bg-slate-800"
+                    : " bg-gray-400"
                 } `}
                 key={i}
                 onClick={() => handleSelect(i)}

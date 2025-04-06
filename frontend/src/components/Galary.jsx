@@ -1,16 +1,17 @@
 import React from "react";
-import PopupWidget from "../pages/PopupWidget";
-import {
-	faFacebookF,
-	faLinkedinIn,
-	faTwitter,
-	faBehance,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import PropTypes from "prop-types";
 import { assets } from "../assets/assets";
 
 const teamMembers = [
+	{
+		picture: assets.finland,
+		fullName: "Session in Finland-World's Happiest Country",
+	},
+	{
+		picture: assets.ssr,
+		fullName: "With Sri Sri Ravishankar",
+	},
 	{
 		picture: assets.police,
 		fullName: "Session with Delhi Police",
@@ -30,13 +31,10 @@ const teamMembers = [
 	},
 	{
 		picture: assets.ilc,
-		fullName: "Runner Up at India's Laughter Challenge",
+		fullName: "One of the four finalists at India's Laughter Challenge (UK)",
 		
 	},
-	{
-		picture: assets.ssr,
-		fullName: "With Sri Sri Ravishankar",
-	},
+	
 	{
 		picture: assets.kavi,
 		fullName: "With Kavi Surendra Kumar Sharma",
@@ -67,7 +65,7 @@ TeamMemberItem.propTypes = {
 
 const Gallery = () => {
 	return (
-		<section className="ezy__team7 light py-14 md:py-24 bg-primary text-white">
+		<section className="ezy__team7 light py-14 md:py-24 bg-primary text-white pt-20">
 			<div className="container px-4 mx-auto">
 				<div className="flex justify-center mb-6 md:mb-12">
 					<div className="max-w-lg text-center">
@@ -89,7 +87,6 @@ const Gallery = () => {
 						</div>
 					))}
 				</div>
-				<PopupWidget />
 			</div>
 		</section>
 	);

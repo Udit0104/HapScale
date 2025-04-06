@@ -1,7 +1,6 @@
 import React from 'react';
 import { assets } from '../assets/assets';
 import { Clock, Heart, Activity, Check, Users, Hospital } from 'lucide-react';
-import PopupWidget from './PopupWidget'
 import OurTeam from '../components/OurTeam';
 const About = () => {
   const stats = [
@@ -45,7 +44,7 @@ const About = () => {
 
         <div className="lg:w-1/2 space-y-8">
           <h2 className="text-4xl font-bold text-gray-800 leading-tight">
-          Is your Enterprise happy ?
+          Are your Employees happy ?
           </h2>
           
           <p className="text-gray-600 text-lg leading-relaxed">
@@ -86,7 +85,7 @@ const About = () => {
             Why Choose <span className="text-blue-600">HapScale</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-          Our workplace happiness strategies enhance employee motivation leading to superior organizational results
+            At HapScale we help baseline current happiness level of employees and provide insights to improve it.
           </p>
         </div>
 
@@ -122,8 +121,6 @@ const About = () => {
         </div>
 
       </div>
-
-      <PopupWidget />
       <OurTeam/>
 
     </div>
